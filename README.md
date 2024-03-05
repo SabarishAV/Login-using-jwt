@@ -1,6 +1,6 @@
 # Login-using-jwt
  
- I have usend mongoose as my database where usernames and passwords are stored. dotenv is used to store environment variables.
+ I have used mongoose as my database where usernames and passwords are stored. dotenv is used to store environment variables.
 
 .env :
 PORT = "port number"
