@@ -34,8 +34,8 @@ router.post("/login",async (req,res)=>{
                 console.log(payload);
                 const jwtToken = jwt.sign(payload,process.env.JWT_SECRET_KEY,{ expiresIn:"15m" })
                 res.cookie('jwtToken', jwtToken, {
-                    httpOnly: true,
-                    secure: true, // Only set secure to true if your website uses HTTPS
+                    // httpOnly: true,
+                    // secure: true, // Only set secure to true if your website uses HTTPS
                     maxAge: 1000 * 60 * 15, // Expires in 15 min
                   });
                 res.redirect("/protected");

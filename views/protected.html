@@ -13,6 +13,7 @@
 
 <script>
     function logOut(){
-        console.log(getCokie);
+        document.cookie="jwtToken=null";
+        location.reload()
     }
 </script>
